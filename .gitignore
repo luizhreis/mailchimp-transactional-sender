@@ -1,0 +1,86 @@
+# Binários
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Arquivos de build do Go
+/bin/
+/pkg/
+*.out
+
+# Dependências de vendor
+/vendor/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Arquivos de configuração pessoal
+config.json
+config.yaml
+config.yml
+
+# Chaves e certificados
+*.pem
+*.key
+*.crt
+*.p12
+
+# Binários compilados do projeto
+mandrill-sender
+simple_email
+with_attachment
+main
+
+# Arquivos relacionados ao GCP (excluir do repositório)
+README-gcloud.md
+create.sh
+cleanup.sh
+exemplo.txt
+PROJETO_GIT_PRONTO.md
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+
+# Arquivos de backup
+*.bak
+*.backup
+*.old
+
+# Coverage reports
+coverage.txt
+coverage.html
+*.cover
+
+# Build artifacts
+dist/
+build/
