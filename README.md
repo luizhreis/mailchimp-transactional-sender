@@ -132,11 +132,21 @@ email := mandrill.EmailRequest{
 }
 ```
 
-## 🚨 Resolução de Problemas
+## 🚨 Problemas Comuns
 
-### Email rejeitado com `unsigned`
-- Verifique se seu domínio está verificado no Mandrill
-- Use um email @gmail.com temporariamente
+### Email rejeitado com `unsigned` ⚠️ **MAIS COMUM**
+Este é o erro mais frequente. O domínio do remetente não está verificado.
+
+**🚀 Solução rápida:**
+```bash
+# Execute o diagnóstico automático
+make diagnostic-unsigned
+```
+
+**🎯 Soluções:**
+1. **Imediata:** Use um email @gmail.com/@yahoo.com que você possui
+2. **Permanente:** Verifique seu domínio em https://mandrillapp.com/settings/sending-domains
+3. **Diagnóstico:** Consulte [docs/unsigned_error_guide.md](docs/unsigned_error_guide.md)
 
 ### Email rejeitado com `recipient-domain-mismatch`  
 - Desative "Domain Matching" nas configurações do Mandrill
@@ -155,7 +165,11 @@ go test ./...
 go test -cover ./...
 
 # Diagnóstico de problemas
-go run examples/diagnostic.go
+make diagnostic-unsigned
+
+# Executar exemplos
+make example-simple
+make example-attachment
 ```
 
 ## 🤝 Contribuindo

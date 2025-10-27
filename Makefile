@@ -49,6 +49,10 @@ example-attachment: ## Executa exemplo de email com anexo
 	@echo "📎 Executando exemplo de email com anexo..."
 	@go run examples/with-attachment/main.go
 
+diagnostic-unsigned: ## Diagnóstico para erro "unsigned"
+	@echo "🔍 Executando diagnóstico para erro 'unsigned'..."
+	@go run examples/diagnostic-unsigned/main.go
+
 lint: ## Executa linter (requer golangci-lint)
 	@echo "🔍 Executando linter..."
 	@golangci-lint run

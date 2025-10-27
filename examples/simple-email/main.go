@@ -17,8 +17,8 @@ func main() {
 	email := mandrill.EmailRequest{
 		To:          "destinatario@example.com", // Altere aqui
 		Subject:     "Email Simples de Teste",
-		FromEmail:   "seu-email@gmail.com",      // Altere aqui
-		FromName:    "Seu Nome",                 // Altere aqui
+		FromEmail:   "seu-email@gmail.com", // Altere aqui
+		FromName:    "Seu Nome",            // Altere aqui
 		HTMLContent: "<h1>Olá!</h1><p>Este é um email de teste simples.</p>",
 		TextContent: "Olá! Este é um email de teste simples.",
 	}

@@ -28,9 +28,9 @@ func main() {
 	client := mandrill.NewClient(apiKey)
 
 	// ⚠️ IMPORTANTE: Configure seus emails aqui
-	destinatario := "destinatario@example.com" // 🔥 ALTERE PARA O EMAIL DESEJADO
-	remetente := "seu-email@gmail.com"         // 🔥 USE SEU EMAIL REAL AQUI
-	nomeRemetente := "Seu Nome"                // 🔥 ALTERE PARA SEU NOME
+	destinatario := "ana.borges@icrescer.org.br" // 🔥 ALTERE PARA O EMAIL DESEJADO
+	remetente := "luizhreis.gris@gmail.com"         // 🔥 USE SEU EMAIL REAL AQUI
+	nomeRemetente := "Ana"                // 🔥 ALTERE PARA SEU NOME
 
 	// Validações básicas
 	if strings.Contains(remetente, "@example.com") {

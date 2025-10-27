@@ -23,8 +23,8 @@ func main() {
 	email := mandrill.EmailRequest{
 		To:          "destinatario@example.com", // Altere aqui
 		Subject:     "Email com Anexo",
-		FromEmail:   "seu-email@gmail.com",      // Altere aqui
-		FromName:    "Seu Nome",                 // Altere aqui
+		FromEmail:   "seu-email@gmail.com", // Altere aqui
+		FromName:    "Seu Nome",            // Altere aqui
 		HTMLContent: "<h1>Documento em Anexo</h1><p>Segue o documento solicitado em anexo.</p>",
 		TextContent: "Documento em Anexo\n\nSegue o documento solicitado em anexo.",
 		Attachment:  attachment,
